@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 01</title>
+    <style>
+        table {
+            box-shadow: 24px 27px 17px -18px rgba(0,0,0,0.73);
+            -webkit-sombra da caixa: 24px 27px 17px -18px rgba(0,0,0,0.73);
+            -moz-sombra da caixa: 24px 27px 17px -18px rgba(0,0,0,0.73);
+
+            border-radius: 10px
+            
+            
+        }
+        
+        table thead {
+            background-color: black;
+            color:white
+        }
+
+        table tfoot {
+            background-color: black;
+            color: white;
+        }
+
+        table tbody tr:nth-child(even) td{
+            background-color:aqua;
+        }
+
+        table tbody tr:hover td{
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+
+        body {
+            background-image: url(https://images.pexels.com/photos/18069156/pexels-photo-18069156.png) ;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="inicio">Meu Primeiro WebSite básico de HTML</h1>
+    <hr>
+    <h2><u>Aprendendo as TAGS em HTML!</u></h2>
+
+    <h3><i>Indíce</i></h3>
+        <ul>
+            <li><a href="#h1">Do<code>&lt;h1&gt;</code>ao<code>&lt;h6&gt;</code></a></li>
+            <li><a href="#p">Tag<code>&lt;P&gt;</code></a></li>
+            <li><a href="#p"><code>&lt;mark&gt;</code></a></li>
+            <li><a href="#p"><code>&lt;small&gt;</code></a></li>
+            <li><a href="#i"><code>&lt;i&gt;-&lt;u&gt;-&lt;strong&gt;</code></a></li>
+            <li><a href="#ol"><code>&lt;ul&gt;-&lt;li&gt;</code></a></li>
+            <li><a href="#a"><code>&lt;a&gt;-&lt;hr&gt;</code></a></li>
+            <li><a href="#sub"><code>&lt;sub&gt;-&lt;sup&gt;-&lt;blockquote&gt;</code></a></li>
+            <li><a href="#tabela">TABELA</a></li>
+        </ul>
+
+    <h2 id="h1">Desvendando as TAGS do <mark>h1</mark> ao <mark>h6</mark></h2>
+
+            <small><a href="#inicio">voltar</a></small>
+
+        <p>As tags <strong>&lt;h1&gt;</strong> até <strong>&lt;h6&gt;</strong> representam títulos e subtítulos. O <code>&lt;h1&gt;</code> é o mais importante e maior, enquanto o <code>&lt;h6&gt;</code> é o menor e menos relevante.</p>
+        <p>São usadas para estruturar e hierarquizar o conteúdo de uma página, como capítulos e seções de um livro.</p>
+        <p>Além de organizarem visualmente, ajudam na acessibilidade e no SEO.</p>
+
+    <hr>
+
+    <h2 id="p">Desvendando as TAGs <mark>p; mark; small</mark></h2>
+
+            <small><a href="#inicio">voltar</a></small>
+
+        <p>A tag <strong>&lt;p&gt;</strong> define um parágrafo de texto. Ela é usada para separar blocos de informação escrita.</p>
+
+        <p>A tag <strong>&lt;mark&gt;</strong> serve para destacar parte de um texto, como se fosse um marca-texto. Exemplo: <mark>isso está destacado</mark>.</p>
+
+        <p>A tag <strong>&lt;small&gt;</strong> exibe o texto em tamanho menor, geralmente usada para observações. Exemplo: <small>nota de rodapé</small>.</p>
+
+    <h2 id="i">Desvendando as TAGs <mark>i; u; strong</mark></h2>
+
+            <small><a href="#inicio">voltar</a></small>
+
+        <p>Com <strong>&lt;i&gt;</strong> deixamos o texto em itálico: <i>como este.</i> Pode indicar estrangeirismos ou ênfase.</p>
+
+        <p>Já a tag <strong>&lt;u&gt;</strong> sublinha o texto: <u>como este exemplo.</u> Antigamente era usada para links, mas hoje tem fins mais decorativos ou específicos.</p>
+
+        <p>Com <strong>&lt;strong&gt;</strong> deixamos o texto em negrito com significado semântico de importância: <strong>isso é importante!</strong></p>
+
+    <hr>
+
+    <h2 id="ol">Desvendando as TAGS <mark>ol; ul</mark></h2>
+
+            <small><a href="#inicio">voltar</a></small>
+
+        <p>A tag <strong>&lt;ol&gt;</strong> cria uma lista ordenada (numerada), e cada item é definido com <code>&lt;li&gt;</code>.</p>
+            <ol>
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+
+        <p>Já a tag <strong>&lt;ul&gt;</strong> define uma lista não ordenada (com marcadores), também usando <code>&lt;li&gt;</code> para os itens.</p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+
+    <hr>
+
+    <h2 id="a">Desvendando as TAGS <mark>a; hr</mark></h2>
+
+            <small><a href="#inicio">voltar</a></small>
+        <p>A tag <strong>&lt;a&gt;</strong> cria links. Por exemplo, <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">clique aqui</a> para visitar a MDN Web Docs.</p>
+
+        <p>A tag <strong>&lt;hr&gt;</strong> cria uma linha horizontal na página. Ela é usada para separar visualmente seções de conteúdo, como uma divisão entre assuntos.</p>
+        
+    <hr>
+
+    <h2 id="sub">Desvendando as TAGS <mark>sub; sup</mark></h2>
+
+            <small><a href="#inicio">voltar</a></small>
+        <p>Com a tag <strong>&lt;sub&gt;</strong> o texto aparece subscrito, útil para fórmulas como H <mark><sub>2</sub></mark>O.</p>
+        <p>A tag <strong>&lt;sup&gt;</strong> exibe texto sobrescrito, como x <mark><sup>2</sup></mark>.</p>
+
+    <h2 id="blockquote">Desvendando a TAG <mark>Blockquote</mark></h2>     
+
+            <small><a href="#inicio">voltar</a></small>
+
+        <p><strong>&lt;blockquote&gt;</strong> é usada para destacar uma citação longa de outra fonte:</p>
+        <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+            "HTML é a linguagem padrão para criar páginas da web."
+        </blockquote>
+
+    <hr>
+    
+    <h2 id="del">Desvendando as TAGS <mark>del; font; abbr</mark></h2>
+            
+            <small><a href="#inicio">voltar</a></small>
+
+        <p><strong>&lt;del&gt;</strong> mostra que um texto foi removido ou está desatualizado. Exemplo: <del>Texto removido</del></p>
+
+        <p><strong>&lt;font&gt;</strong> era usada para alterar a cor, fonte e tamanho do texto, mas hoje está obsoleta. Exemplo: <font color="blue" face="Arial">Texto azul com fonte Arial</font></p>
+
+        <p><strong>&lt;abbr&gt;</strong> define uma abreviação e mostra seu significado ao passar o mouse. Exemplo: <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+
+    <h2 id="tabela">Tabela</h2>
+
+         <small><a href="#inicio">voltar</a></small>
+
+        <table border="5" cellspacing="5" cellpadding="8" align="center">
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Função</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;h1&gt; a &lt;h6&gt;</td>
+                    <td>Definem títulos e subtítulos, do mais importante (&lt;h1&gt;) ao menos (&lt;h6&gt;).</td>                
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Cria um parágrafo de texto.</td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Destaca um trecho com fundo amarelo (tipo marca-texto).</td>
+                </tr>
+                <tr>
+                    <td>&lt;small&gt;</td>
+                    <td>Exibe texto em tamanho menor, usado para notas ou detalhes.</td>
+                </tr>
+                <tr>
+                    <td>&lt;i&gt;</td>
+                    <td>Coloca o texto em itálico, normalmente para ênfase ou termos estrangeiros.</td>
+                </tr>
+                <tr>
+                    <td>&lt;u&gt;</td>
+                    <td>Sublinha o texto.</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Destaca o texto em negrito e indica que ele é importante.</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Cria uma lista ordenada (numerada).</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Cria uma lista não ordenada (com marcadores).</td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;</td>
+                    <td>Define um item de lista, usado dentro de &lt;ol&gt; ou &lt;ul&gt;.</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Cria um link clicável para outra página, site ou recurso.</td>
+                </tr>
+                <tr>
+                    <td>&lt;hr&gt;</td>
+                    <td>Insere uma linha horizontal para dividir seções.</td>
+                </tr>
+                <tr>
+                    <td>&lt;sub&gt;</td>
+                    <td>Exibe texto em subscrito (abaixo da linha), útil em fórmulas químicas.</td>
+                </tr>
+                <tr>
+                    <td>&lt;sup&gt;</td>
+                    <td>Exibe texto em sobrescrito (acima da linha), usado em potências, por exemplo.</td>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>Exibe uma citação longa de outra fonte, com recuo.</td>
+                </tr>
+                <tr>
+                    <td>&lt;font&gt;</td>
+                    <td>Define cor, tipo e tamanho da fonte (obsoleta, substituída por CSS).</td>
+                </tr>
+                <tr>
+                    <td>&lt;del&gt;</td>
+                    <td>Indica que o texto foi removido (riscado).</td>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>Define uma abreviação com explicação (mostra significado ao passar o mouse).</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" align="center"><strong><i>HTML !</i></strong></td>
+                </tr>
+            </tfoot>
+        </table>
+
+</body>
+</html>
